@@ -1,0 +1,12 @@
+.slide-part {
+  width: 1600px;
+  margin: 0 auto;
+}
+.slide-part h1 {
+  font-size: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: capitalize;
+}/*# sourceMappingURL=SliderCart.css.map */

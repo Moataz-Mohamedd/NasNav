@@ -1,0 +1,186 @@
+@use '../../Variables/Variables.scss' as *;
+
+
+
+.container-navbar{
+    margin:  auto;
+    width:1600px;
+    height: 100px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.list{
+    float: left;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: left;
+            a {
+              padding: 10px 20px 0 20px;
+              line-height: 100%;
+              color: $secondary-color;
+              text-decoration: none;
+              font-family: 'Poppins';
+              font-size: 16px;
+              text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.options button{
+      cursor: pointer;
+     border-radius: 100%;
+     border-color: $primary-color;
+     margin-left: 20px;
+     
+}
+
+.dropbtn {
+position: absolute;
+margin-top: -28px;
+right:270px;
+}
+
+.dropdown {
+  margin-right: 100px;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-width: max-content;
+  .total{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.dropdown-content .content {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  width: 50%;
+  gap: 20px;
+}
+
+.dropdown-content .content .img-size img {
+  width: 85px;
+  height: 98px; 
+  margin-top: 20px;
+  border-radius: round($number: 20px);
+}
+.content-text{
+  border-bottom: 1px solid rgb(202, 202, 202);
+  position: relative;
+  
+
+}
+.content-text p {
+  color: rgba(7, 7, 7, 0.60);
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120.5%;
+
+}
+.content-text h4{
+  color: #B93C3C;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-variant: small-caps;
+  line-height: 100%;
+}
+
+.content-text{
+  button{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    background-color: white;
+    color: white;
+    .trash{
+      color: #B93C3C;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+    }
+  }
+}
+
+.backk{
+    width: 300px;
+    height: 50px;
+    border-radius: round($number: 10px) !important;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: #C7C7C5;
+        scale: calc(1.02);
+        transition-duration: 0.4s;
+    }
+}
+.sub{
+  color: #7E7E7E;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+.pricee{
+  color: #B93C3C;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+.qtn{
+  background-color: rgb(182, 182, 182);
+  border-radius: round($number: 100%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+

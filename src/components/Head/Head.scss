@@ -1,0 +1,26 @@
+@use '../../Variables/Variables.scss'  as *;
+
+.head{
+    height: 82px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+.list-head{
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+     p {
+       padding: 0px 1px;
+        line-height: 100%;
+        color: $primary-color;
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-size: 16px;
+      }   
+}
